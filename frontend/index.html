@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Air Quality Predictor</title>
+</head>
+<body>
+    <h1>Predict PM2.5</h1>
+    <button onclick="predict()">Predict</button>
+    <p id="result"></p>
+
+    <script>
+        async function predict() {
+            const response = await fetch('http://localhost:8000/predict', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({features: [
+                    17.0, 20.0, 17.0, 17.0, 6.0, 8.0, 8.0
+                    ]})
+            });
+        const data = await response.json();
+        document.getElementById('result')
+                .innerText = 'Predict PM2.5: ' + data.pm25;
+        }
+    </script>
+</body>
+</html>

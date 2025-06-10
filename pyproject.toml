@@ -1,0 +1,17 @@
+[project]
+name = "AirQualityPredictionWebApp"
+version = "0.1.0"
+description = "Small end-to-end webapp for predicting air quality in NL"
+authors = ["MJHDrummond"]
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort",
+    "flake8"
+]
