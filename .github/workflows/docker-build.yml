@@ -15,7 +15,7 @@ jobs:
 
     env:
       IMAGE_OWNER: mjhdrummond
-      IMAGE_NAME: airqualitypredictionwebapp
+      IMAGE_NAME: air-quality-prediction-webapp
 
     steps:
       - name: Checkout code

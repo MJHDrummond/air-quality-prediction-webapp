@@ -1,5 +1,5 @@
 [project]
-name = "AirQualityPredictionWebApp"
+name = "air-quality-prediction-webapp"
 version = "0.1.0"
 description = "Small end-to-end webapp for predicting air quality in NL"
 authors = ["MJHDrummond"]
