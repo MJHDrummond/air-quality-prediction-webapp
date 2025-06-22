@@ -1,4 +1,4 @@
-# AirQualityPredictionWebApp
+# Air Quality Prediction WebApp
 
 - Project start date: 6 June 2025
 - Create FastAPI API layer: 6 June 2025
